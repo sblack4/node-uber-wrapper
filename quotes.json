@@ -1,0 +1,74 @@
+{
+ "pickup": {
+   "location": {
+     "address": "1900 Oracle Way",
+     "address_2": "",
+     "city": "Reston",
+     "state": "VA",
+     "postal_code": "20190",
+     "country": "USA"
+   }
+
+ },
+ "dropoff": {
+   "location": {
+     "address": "4211 Ridgetop Road",
+     "address_2": "",
+     "city": "Fairfax",
+     "state": "VA",
+     "postal_code": "22030",
+     "country": "USA"
+   }
+ }
+
+}
+=================================
+sandbox
+==================================
+
+{
+    "dropoff": {
+        "location": {
+            "address": "530 W 113th Street",
+            "address_2": "Floor 2",
+            "city": "New York",
+            "country": "US",
+            "postal_code": "10025",
+            "state": "NY"
+        }
+    },
+    "pickup": {
+        "location": {
+            "address": "636 W 28th Street",
+            "address_2": "Floor 2",
+            "city": "New York",
+            "country": "US",
+            "postal_code": "10001",
+            "state": "NY"
+        }
+    }
+}
+
+
+
+{"pickup":
+  {"location":
+    {"address":"1900 Oracle Way",
+      "address_2":"",
+      "city":"Reston",
+      "state":"VA",
+      "postal_code":"20190",
+      "country":"USA"
+      }
+    },
+  "dropoff":
+    {"location":
+      {"address":"4211 Ridgetop Road",
+       "address_2":"",
+       "city":"Fairfax",
+       "state":"VA",
+       "postal_code":"22030",
+       "country":"USA"
+       }
+    }
+ }

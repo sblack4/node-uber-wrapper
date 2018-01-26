@@ -1,0 +1,65 @@
+{
+    "dropoff": {
+        "contact": {
+            "company_name": "Gizmo Shop",
+            "email": "developer@uber.com",
+            "first_name": "Calvin",
+            "last_name": "Lee",
+            "phone": {
+                "number": "+15551234567",
+                "sms_enabled": false
+            }
+        },
+        "location": {
+            "address": "530 W 113th Street",
+            "address_2": "Floor 2",
+            "city": "New York",
+            "country": "US",
+            "postal_code": "10025",
+            "state": "NY"
+        }
+    },
+    "items": [
+        {
+            "height": 5.0,
+            "is_fragile": true,
+            "length": 14.5,
+            "price": true,
+            "quantity": 1,
+            "title": "Shoes",
+            "weight": 2.0,
+            "width": 7.0
+        },
+        {
+            "height": 5.0,
+            "length": 25.0,
+            "quantity": 1,
+            "title": "Guitar",
+            "weight": 10.0,
+            "width": 12.0
+        }
+    ],
+    "order_reference_id": "SDA124KA",
+    "pickup": {
+        "contact": {
+            "company_name": "Gizmo Shop",
+            "email": "developer@uber.com",
+            "first_name": "Calvin",
+            "last_name": "Lee",
+            "phone": {
+                "number": "+15551234567",
+                "sms_enabled": false
+            }
+        },
+        "location": {
+            "address": "636 W 28th Street",
+            "address_2": "Floor 2",
+            "city": "New York",
+            "country": "US",
+            "postal_code": "10001",
+            "state": "NY"
+        },
+        "special_instructions": "Go to pickup counter in back of shop."
+    },
+    "quote_id": "KEA3OTBlMmQyZmIwYjY4ODg1MTU4MjYzMTU1M2QwYjEzNTRhNjY0NjNlYjFkNmJiZGZlODBkNWFlN2Q1MDEyNzllFazAsd4KFdzJsd4KFYD1sgwcFdD/0oQDFYfw48EFABwVyoCThQMVp/qvwQUAGANVU0QA"
+}
