@@ -4,13 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "author": "Phani T",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
-    "express-session": "^1.15.6"
+    "express-session": "^1.15.6",
+    "node-uber": "^2.0.0"
   }
 }

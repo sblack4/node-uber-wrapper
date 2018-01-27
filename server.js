@@ -5,38 +5,29 @@ var Uber = require('node-uber');
 var url = require('url');
 var nue = require('./node-uber-eats/index.js');
 var session = require('express-session');
+var cookieParser = require('cookie-parser');
+
 
 var PORT = process.env.PORT || 8080;
 
-// var uber = new Uber({
-//   client_id: 'x12ZWFymkcThH2NkgkPxWQt3Sv4mPpNk',
-//   client_secret: 'tpfmHr20Q2PNYsYyghHsl5x-eHRKDm2NCJXf8EY-',
-//   server_token: '0jSLKHDTvnj3I6wz0EEXiv7meQaP22jc9TuO_t5Y',
-//   redirect_uri: 'http://localhost:8080/api/callback',
-//   name: 'MyTestEats',
-//   base_version: 'v1',
-//   language: 'en_US', // optional, defaults to en_US
-//   sandbox: true, // optional, defaults to false
-//   proxy: '' // optional, defaults to none
-// });
-
-app.use(bodyParser.json());
+// middleware
+app.use(cookieParser()); 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(session({ secret: 'keyboard cat' }))
+app.use(bodyParser.json());
+app.use(session({
+    secret: "config.get('secret')",
+    resave: false,
+    saveUninitialized: true
+}));
 
-app.use(function(request, response, next) {
-  // console.log(request);
-  next();
-})
-
+// APIs
 app.get('/api/getAllQuotes',(something, somethingelse) => nue.getAllQuotes);
-
 app.get('/api/login/*', (something, somethingelse) => nue.login);
-
 app.get('/api/callback',(something, somethingelse) => nue.getAuthToken);
-
 app.get('/api/gq', (something, somethingelse) => nue.getAllQuotes);
 
+
+// start the server!
 app.listen(PORT, function(err) {
 	if(err) {
 		console.log("errr", err);
