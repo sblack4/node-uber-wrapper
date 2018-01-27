@@ -1,0 +1,20 @@
+// **** IMPORTANT ****
+// This is an example configuration file, you will need to fill this in
+// with your applications configuration found at https://developer.uber.com/dashboard
+// You will also have to rename this file to "default.json" in order for the app to find it.
+//
+// Never commit "default.json" to source control because it will contain your application's secret
+{
+    "uber": {
+      "client_id": "CLIENT_ID",
+      "client_secret": "CLIENT_SECRET",
+      "redirect_host": "https://my.server.puppies",
+      "redirect_path": "/path/to/redirect",
+      "webhook_path": "/webhooks",
+      "surge_path": "/surge-accept",
+      "scopes": "SPACE DELIMITED SCOPES"
+    },
+    "port": "3000",
+    "secret" : "<ANY_SECRET_STRING>",
+    "env": "sand"
+  }

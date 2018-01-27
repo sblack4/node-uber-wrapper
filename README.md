@@ -16,3 +16,4 @@ we want to make it a great API for uber-eats too
 ## Acknowledgements 
 
 * Thank you @noonhub [node-uber-sample](https://github.com/noonhub/node-uber-sample)
+* digitaloean for a great [explaination of oath2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)

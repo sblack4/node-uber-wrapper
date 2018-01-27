@@ -8,12 +8,15 @@
     "start": "node server.js"
   },
   "author": "Phani T",
+  "repository": "https://github.com/phani87/node-uber-wrapper",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "config": "^1.29.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
-    "node-uber": "^2.0.0"
+    "node-uber": "^2.0.0",
+    "simple-oauth2": "^1.5.0"
   }
 }
