@@ -18,6 +18,7 @@ var surge_path = config.get('uber.surge_path'); // ???
 var PORT = process.env.PORT || 8080;
 
 // our "database"
+// this or data/database.json
 var sessionClients = {};
 
 // middleware
